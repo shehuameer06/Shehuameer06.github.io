@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALP - Ameer Land and Properties | Where Dreams Find Address</title>
+    <style>
+        /* style.css - Ameer Land and Properties */
+        :root {
+            --navy-blue: #0A2463;
+            --gold: #D4AF37;
+            --light-gold: #F4E4A6;
+            --dark-navy: #061A40;
+            --white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --dark-gray: #333333;
+            --text-gray: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--white);
+        }
+
+        /* Social Top Bar */
+        .social-top {
+            background-color: var(--dark-navy);
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .social-top .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .social-top .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-top .social-link {
+            color: var(--light-gold);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .social-top .social-link:hover {
+            color: var(--white);
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--navy-blue);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: var(--gold);
+            text-align: left;
+        }
+
+        .logo-main {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .logo-sub {
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+
+        .logo-motto {
+            font-size: 12px;
+            color: var(--light-gold);
+            font-style: italic;
+            margin-top: 3px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--gold);
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--dark-navy) 100%);
+            color: var(--white);
+            padding: 180px 0 100px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background-color: var(--gold);
+            color: var(--navy-blue);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--light-gold);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--gold);
+            color: var(--navy-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: var(--navy-blue);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border: 1px solid var(--light-gold);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            color: var(--navy-blue);
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* Properties Section */
+        .properties {
+            padding: 80px 0;
+        }
+
+        .properties h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: var(--navy-blue);
+        }
+
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .property-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border: 1px solid var(--light-gold);
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .property-image {
+            height: 200px;
+            background: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-gray);
+            font-size: 16px;
+        }
+
+        .property-info {
+            padding: 20px;
+        }
+
+        .property-info h3 {
+            color: var(--navy-blue);
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .property-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--gold);
+            margin: 10px 0;
+        }
+
+        .property-location {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .property-features {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .property-features span {
+            background: var(--light-gray);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        .negotiable-badge {
+            color: var(--gold);
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        /* Success Stories */
+        .success-stories {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+        }
+
+        .success-stories h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: var(--navy-blue);
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .story-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 1px solid var(--light-gold);
+        }
+
+        .story-card h3 {
+            color: var(--navy-blue);
+            margin-bottom: 15px;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--dark-navy) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-navy);
+            color: var(--white);
+            padding: 40px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .footer-section p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .footer-section .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-section .social-links a {
+            color: var(--light-gold);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section .social-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .hero-buttons, .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .services-grid, .properties-grid, .stories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Social Bar -->
+    <div class="social-top">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://chat.whatsapp.com/BNRx84yLsPD5S4MGgrF2Ce" class="social-link">📱 WhatsApp</a>
+                <a href="https://instagram.com/Ameerproperties_1" class="social-link">📸 Instagram</a>
+                <a href="mailto:ameerproperties1@gmail.com" class="social-link">✉️ Email</a>
+                <a href="tel:09033051292" class="social-link">📞 09033051292</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-main">ALP</div>
+                <div class="logo-sub">AMEER LAND AND PROPERTY</div>
+                <div class="logo-motto">Where Dreams Find Address</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Building Your Future, One Home at a Time</h1>
+            <p>Your trusted partner for properties in Kano - Houses, Lands, Commercial Spaces</p>
+            
+            <div class="hero-buttons">
+                <a href="#properties" class="btn btn-primary">View Properties</a>
+                <a href="contact.html" class="btn btn-secondary">Contact CEO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Buying</h3>
+                    <p>Find your dream home with our expert guidance</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Selling</h3>
+                    <p>Get the best value for your property</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔑</div>
+                    <h3>Renting</h3>
+                    <p>Quality homes and offices for rent</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⭐</div>
+                    <h3>Consulting</h3>
+                    <p>Expert advice for your property decisions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties">
+        <div class="container">
+            <h2>Featured Properties</h2>
+            <div class="properties-grid">
+                <!-- Property 1 - YOUR REAL PROPERTY -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://drive.google.com/uc?export=download&id=1VDTIesJ_ECoEfPLsCsP4Wsb1FN3Nu8Si" alt="Newly Brand House in Dorayi Babba" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="property-info">
+                        <h3>Newly Brand House Available for Sale</h3>
+                        <div class="property-price">₦100,000,000</div>
+                        <div class="property-location">📍 Dorayi Babba, Behind Titin Kadawa Kano</div>
+                        <div class="property-features">
+                            <span>🏠 5 Bedrooms</span>
+                            <span>🚿 5 Toilets</span>
+                            <span>🛋️ 2 Parlours</span>
+                            <span>🍳 1 Kitchen</span>
+                            <span>🚗 4 Parking</span>
+                            <span>💧 Borehole</span>
+                            <span>🔒 Secure Area</span>
+                        </div>
+                        <div class="negotiable-badge">💰 Price Negotiable</div>
+                        <a href="tel:09033051292" class="btn btn-primary" style="width: 100%; text-align: center;">📞 Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        [Add Property Photo]
+                    </div>
+                    <div class="property-info">
+                        <h3>Commercial Land Plot</h3>
+                        <div class="property-price">₦15,000,000</div>
+                        <div class="property-location">📍 Nassarawa, Kano</div>
+                        <div class="property-features">
+                            <span>Land</span>
+                            <span>Prime Location</span>
+                        </div>
+                        <a href="tel:09033051292" class="btn btn-primary" style="width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        [Add Property Photo]
+                    </div>
+                    <div class="property-info">
+                        <h3>Luxury Villa</h3>
+                        <div class="property-price">₦45,000,000</div>
+                        <div class="property-location">📍 GRA, Kano</div>
+                        <div class="property-features">
+                            <span>🏠 5 Bedrooms</span>
+                            <span>🚿 4 Bathrooms</span>
+                            <span>Luxury</span>
+                        </div>
+                        <a href="tel:09033051292" class="btn btn-primary" style="width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        [Add Property Photo]
+                    </div>
+                    <div class="property-info">
+                        <h3>Office Space</h3>
+                        <div class="property-price">₦8,000,000</div>
+                        <div class="property-location">📍 City Centre, Kano</div>
+                        <div class="property-features">
+                            <span>Commercial</span>
+                            <span>Prime Location</span>
+                        </div>
+                        <a href="tel:09033051292" class="btn btn-primary" style="width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <h3>Prime Residential Estate</h3>
+                    <p>Helped families find dream homes in secure Zoo Road neighborhood</p>
+                </div>
+                <div class="story-card">
+                    <h3>Commercial Land Sale</h3>
+                    <p>Assisted business owners acquire prime land in Nassarawa</p>
+                </div>
+                <div class="story-card">
+                    <h3>Luxury Villa Selection</h3>
+                    <p>Guided clients to their perfect luxury villa in GRA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Find Your Dream Property?</h2>
+            <p>Contact CEO Aliyu Shehu Ashaka today</p>
+            <div class="cta-buttons">
+                <a href="tel:09033051292" class="btn btn-primary">Call Now</a>
+                <a href="https://chat.whatsapp.com/BNRx84yLsPD5S4MGgrF2Ce" class="btn btn-secondary">Join WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-main">ALP</div>
+                        <div class="logo-sub">AMEER LAND AND PROPERTY</div>
+                    </div>
+                    <p>Building Your Future, One Home at a Time</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 09033051292</p>
+                    <p>✉️ ameerproperties1@gmail.com</p>
+                    <p>📍 Zoo Road, Kano</p>
+                    <p>🏢 Office: Coming Soon</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/Ameerproperties_1">Instagram</a>
+                        <a href="https://chat.whatsapp.com/BNRx84yLsPD5S4MGgrF2Ce">WhatsApp Group</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ameer Land and Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
