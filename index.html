@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALP Properties | Where Dreams Find Address</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* === TRUST-BUILDING DESIGN SYSTEM === */
+        :root {
+            --trust-blue: #0A2463;
+            --premium-gold: #D4AF37;
+            --success-green: #10B981;
+            --pure-white: #FFFFFF;
+            --soft-gray: #F8FAFC;
+            --dark-text: #1E293B;
+            --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --radius-smooth: 16px;
+            --transition-gentle: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            overflow-x: hidden;
+        }
+
+        /* === UNIQUE TRUST HEADER === */
+        .trust-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--trust-blue), var(--premium-gold));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.4rem;
+            box-shadow: var(--shadow-premium);
+        }
+
+        .logo-text h1 {
+            color: var(--trust-blue);
+            font-size: 1.6rem;
+            font-weight: 800;
+        }
+
+        .logo-text p {
+            color: var(--premium-gold);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* === TRUST BADGES - UNIQUE FEATURE === */
+        .trust-badges {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--soft-gray);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--trust-blue);
+            transition: var(--transition-gentle);
+        }
+
+        .trust-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .trust-badge.verified {
+            background: linear-gradient(135deg, var(--success-green), #34D399);
+            color: white;
+        }
+
+        /* === MISSION HERO - UNIQUE DESIGN === */
+        .mission-hero {
+            background: linear-gradient(135deg, var(--trust-blue) 0%, #1E40AF 100%);
+            color: var(--pure-white);
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+
+        .mission-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+%, transparent 50%);
+        }
+
+        .mission-content {
+                   }
+
+        .mission-content {
+            max-width: 1200 max-width: 1200px;
+            margin: px;
+            margin: 0 auto;
+            padding:0 auto;
+            padding: 0 2rem;
+ 0 2rem;
+            text-align: center;
+                       text-align: center;
+            position position: relative;
+            z-index: 2;
+        }
+
+        .mission-statement {
+: relative;
+            z-index: 2;
+        }
+
+        .mission-statement {
+            background            background: rgba(255: rgba(255, 255, 255, 255, 255, 0., 0.1);
+1);
+            backdrop-filter:            backdrop-filter: blur(20 blur(20px);
+           px);
+            padding:  padding: 3rem;
+3rem;
+            border-radius:            border-radius: var(-- var(--radius-smooth);
+radius-smooth);
+            border            border: 1px: 1px solid rgba( solid rgba(255, 255, 255, 255255, 255, , 0.2);
+0.2);
+            margin            margin-bottom: 3-bottom: 3rem;
+        }
+
+rem;
+        }
+
+        .        .mission-statement hmission-statement h11 {
+            font-size {
+            font-size: : 3.5rem3.5rem;
+           ;
+            font-weight:  font-weight: 800;
+800;
+                       margin margin-bottom: 1.5rem;
+-bottom: 1.5rem;
+            background: linear-gradient(            background: linear-gradient(135deg, #FFFFFF, var135deg, #FFFFFF, var(--premium-gold));
+(--premium-gold));
+            -webkit-background-cl            -webkit-background-clip:ip: text;
+            - text;
+            -webkit-textwebkit-text-fill-color:-fill-color: transparent;
+        transparent;
+        }
+
+        .mission }
+
+        .mission-statement-statement p {
+            font-size p {
+            font-size: 1.4rem;
+            line-height: 1.: 1.4rem;
+            line-height: 1.8;
+            opacity: 8;
+            opacity: 0.95;
+            max0.95;
+            max-width: 800px;
+-width: 800px;
+            margin: 0 auto            margin: 0 auto;
+        }
+
+        /* === TRUST;
+        }
+
+        /* === TRUST INDICATORS - INDICATORS - UNIQUE FEATURE === */
+        .trust-indicators {
+ UNIQUE FEATURE === */
+        .trust-indicators {
+            display:            display: grid;
+            grid grid;
+            grid-template-column-template-columns: repeat(autos: repeat(auto-fit,-fit, minmax(250 minmax(250px,px, 1 1fr));
+            gap:fr));
+            gap: 2rem 2rem;
+           ;
+            margin-top:  margin-top: 4rem;
+       4rem;
+        }
+
+        . }
+
+        .trust-indicatortrust-indicator {
+            {
+            background: rgba background: rgba(255, (255, 255, 255, 255, 255, 0.10.1);
+            padding);
+            padding: 2rem: 2rem;
+           ;
+            border-radius: var border-radius: var(--radius-smooth(--radius-smooth);
+            text-align: center;
+           );
+            text-align: center;
+            backdrop-filter: blur( backdrop-filter: blur(1010px);
+            border:px);
+            border:  1px solid rgba(2551px solid rgba(255,, 255, 255 255, 255,, 0.1);
+            0.1);
+            transition: var(--transition-g transition: var(--transition-gentle);
+        }
+
+        .entle);
+        }
+
+        .trust-indicator:hover {
+            transformtrust-indicator:hover {
+            transform: translateY(-5px: translateY(-5px);
+            background: rgba(255, 255, );
+            background: rgba(255, 255, 255255, 0.15, 0.15);
+       );
+        }
+
+        .trust-ind }
+
+        .trust-indicatoricator .icon {
+            .icon {
+            font-size: 3rem font-size: 3rem;
+;
+            margin-bottom:             margin-bottom: 1rem;
+1rem;
+            color: var(--premium-gold);
+                   color: var(--premium-gold);
+        }
+
+        .trust-indicator }
+
+        .trust-indicator h3 {
+            font h3 {
+            font-size: 1.3-size: 1.3rem;
+            margin-bottom:rem;
+            margin-bottom: 1 rem;
+            font-weight:1rem;
+            font-weight 700;
+        }
+
+       : 700;
+        }
+
+        /* === WHATSAPP COMMUN /* === WHATSAPP COMMUNITY SECTION === */
+        .ITY SECTION === */
+        .whatsapp-community {
+            padding: whatsapp-community {
+            padding: 100px 0;
+           100px 0;
+            background: background: var(-- var(--pure-white);
+        }
+
+       pure-white);
+        }
+
+        .community .community-card {
+            max-width-card {
+            max-width: 800px;
+: 800px;
+            margin            margin: 0 auto;
+: 0 auto;
+                       background: linear-gradient(135 background: linear-gradient(135deg, var(--trust-bluedeg, var(--trust-blue), #1E40AF), #1E40AF);
+            color: white;
+);
+            color: white;
+            padding            padding: 4rem;
+            border-radius:: 4rem;
+            border-radius: var var(--radius-smooth);
+           (--radius-smooth);
+            text text-align: center;
+            box-align: center;
+            box-shadow: var(---shadow: var(--shadow-premium);
+            position: relativeshadow-premium);
+            position: relative;
+            overflow: hidden;
+;
+            overflow: hidden;
+        }
+
+        .community-card        }
+
+        .community-card::::before {
+            content:before {
+            content: '';
+            position: absolute;
+            top '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            left:: -50%;
+            width -50%;
+            width: 200%;
+            height: 200%;
+            height: : 200%;
+            background200%;
+            background: radial: radial-gradient(circle,-gradient(circle, rgba(212, 175,  rgba(212, 175, 55, 0.155, 0.1)) 0%, transparent  0%, transparent 70%);
+            animation: float 6s ease-in-out infinite70%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+       ;
+        }
+
+        @key @keyframes float {
+            frames float {
+            0%, 100% { transform: translateY(0px)0%, 100% { transform: translateY(0px) rotate(0deg rotate(0deg); }
+); }
+            50% {            50% { transform: transform: translateY(- translateY(-20px) rotate(18020px) rotate(180deg); }
+       deg); }
+        }
+
+        .community-card }
+
+        .community-card h2 h2 {
+            font-size: {
+            font-size: 2.5rem 2.5rem;
+           ;
+            margin-bottom:  margin-bottom: 1rem1rem;
+            font-weight;
+            font-weight: : 800;
+        }
+
+       800;
+        }
+
+        . .community-card p {
+community-card p {
+            font-size            font-size: 1.2: 1.2rem;
+rem;
+            margin-bottom:            margin-bottom: 2 2rem;
+            opacity: 0.9;
+rem;
+            opacity: 0.9;
+        }
+
+        .        }
+
+        .whatswhatsapp-btn {
+           app-btn {
+            display: display: inline-flex inline-flex;
+            align-items;
+            align-items: center;
+            gap: center;
+            gap: 1: 1rem;
+            backgroundrem;
+            background: linear: linear-gradient(135deg-gradient(135deg, #25, #25D366,D366, #128C7 #128C7E);
+E);
+            color            color: white;
+           : white;
+            padding: 1 padding: 1.2rem.2rem 2. 2.5rem;
+5rem;
+            border-radius            border-radius: 50px: 50px;
+            text;
+            text-decoration: none-decoration: none;
+            font-weight;
+            font-weight: : 700;
+            font700;
+            font-size:-size: 1.1 1.1rem;
+rem;
+            transition: var            transition: var(--transition(--transition-gentle);
+-gentle);
+            box-shadow            box-shadow: 0: 0 10px 30px 10px 30px rgba( rgba(37, 211, 102, 0.4);
+       37, 211, 102, 0.4);
+        }
+
+ }
+
+        .whatsapp        .whatsapp-btn:hover {
+           -btn:hover {
+            transform: transform: translateY(-3 translateY(-3px) scalepx) scale(1.(1.05);
+            box05);
+            box-shadow: 0-shadow: 0 15 15px 40pxpx 40px rgba( rgba(37, 21137, 211, , 102, 102, 0.60.6);
+        }
+
+       );
+        }
+
+        /* === PROP /* === PROPERTIES WITHERTIES WITH TRUST B TRUST BADGES ===ADGES === */
+        */
+        .trust-properties .trust-properties {
+            padding: 100px 0;
+            background: var {
+            padding: 100px 0;
+            background: var(--soft(--soft-gray);
+        }
+
+-gray);
+        }
+
+        .        .property-card {
+           property-card {
+            background background: var: var(--pure-white);
+            border-radius:(--pure-white);
+            border-radius: var var(--radius-smooth);
+            overflow: hidden;
+            box-shadow:(--radius-smooth);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+ var(--shadow-soft);
+                       transition: var(--transition transition: var(--transition-gent-gentle);
+            position:le);
+            position: relative;
+        }
+
+        .property-card:hover {
+            transform: relative;
+        }
+
+        .property-card:hover {
+            transform: translate translateY(-10px);
+Y(-10px);
+            box            box-shadow: var(---shadow: var(--shadow-premshadow-premium);
+        }
+
+       ium);
+        }
+
+        . .property-trust {
+            positionproperty-trust {
+            position: absolute;
+           : absolute;
+            top: top: 1rem;
+ 1rem;
+            left            left: 1rem: 1rem;
+           ;
+            display: display: flex;
+            gap flex;
+            gap: 0.: 0.5rem5rem;
+            z-index;
+            z-index:: 2;
+        }
+
+        2;
+        }
+
+        .trust-tag {
+ .trust-tag {
+            background: var(--success            background: var(--success-green);
+-green);
+            color: white            color: white;
+           ;
+            padding: 0 padding: 0.5.5rem 1rem;
+           rem 1rem;
+            border-radius:  border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .trust-tag.verified {
+            background: var(--premium-gold);
+        }
+
+        /* === UNIQUE FEATURES === */
+20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .trust-tag.verified {
+            background: var(--premium-gold);
+        }
+
+        /* === UN        .flIQUE FEATURES === */
+        .floating-trust {
+            positionoating-trust {
+            position:: fixed;
+            bottom: 2 fixed;
+            bottom: 2rem;
+rem;
+            right:             right: 2rem;
+            z-index: 2rem;
+            z-index: 1000;
+        }
+
+       1000;
+        }
+
+        .trust-widget {
+ .trust-widget {
+            background: linear-gradient(            background: linear-gradient(135deg, var(--trust-blue135deg, var(--trust), var(--premium-gold-blue), var(--premium-g));
+            color: white;
+old));
+            color: white            padding: 1rem;
+            padding: 1rem 1.5rem 1.5rem;
+            border-radius: ;
+            border-radius: 50px;
+            box50px;
+            box-shadow-shadow: var(--shadow-premium: var(--shadow-premium);
+);
+            display: flex;
+            display: flex;
+            align-items            align-items:: center;
+            gap: 1 center;
+            gap: 1remrem;
+            animation: pulse 2s infinite;
+        }
+
+       ;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+             @keyframes pulse {
+            0%,0%, 100% { 100% { transform transform: scale(1);: scale(1); }
+             }
+            50% { transform: scale50% { transform: scale(1.05); }
+(1.05); }
+        }
+
+        /* === RESPONSIVE DESIGN === */
+               }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            .trust-badges {
+                display: none @media (max-width: 768px) {
+            .trust-badges {
+                display: none;
+           ;
+            }
+            
+            }
+            
+            .mission-st .mission-statement h1atement h1 {
+                font {
+                font-size: 2-size: 2.5.5rem;
+           rem;
+            }
+            
+            }
+            
+            .mission-statement .mission-statement p {
+                p {
+                font-size font-size: 1: 1.1rem.1rem;
+            }
+            
+           ;
+            }
+            
+            .community .community-card {
+                padding-card {
+                padding: : 2rem2rem;
+                margin;
+                margin: 0 1: 0 1rem;
+           rem;
+            }
+            
+            }
+            
+            .community-card .community-card h2 {
+ h2 {
+                font                font-size: 2rem-size: 2rem;
+            }
+;
+            }
+        }
+    </        }
+    </style>
+style>
+</head>
+<body</head>
+<body>
+   >
+    <!-- Unique Trust Header <!-- Unique Trust Header -->
+    -->
+    <header class=" <header class="trust-headertrust-header">
+        <div">
+        <div class="nav-container">
+            class="nav-container">
+            <div class="logo">
+                <div class="logo">
+                <div class="logo-icon"> <div class="logo-icon">ALALP</div>
+               P</div>
+                <div <div class="logo-text class="logo-text">
+                   ">
+                    <h1> <h1>ALPALP PROPERTIES</h PROPERTIES</h11>
+                    <p>Where>
+                    <p>Where Dreams Find Address</p>
+ Dreams Find Address</p>
+                </div>
+            </                </div>
+            </divdiv>
+
+            <!-- Trust Bad>
+
+            <!-- Trust Badgesges -->
+            <div class -->
+            <div class="trust-badges">
+               ="trust-badges">
+                <div class="trust-badge <div class="trust-badge verified">
+                    <i class verified">
+                    <i class="fas="fas fa-shield-check"></i>
+                    Verified Properties fa-shield-check"></i>
+                    Verified Properties
+                </div>
+
+                </div>
+                <                <div class="trustdiv class="trust-b-badge">
+                    <i class="fas fa-handshakeadge">
+                    <i class="fas fa-handshake"></i>
+                    Trusted"></i>
+                    Trusted Since 2016
+ Since 2016
+                               </div>
+                < </div>
+                <divdiv class="trust-badge">
+ class="trust-badge">
+                                       <i class="fas fa <i class="fas fa-star"></i>
+                    200-star"></i>
+                    200+ Happy Clients
+                </+ Happy Clients
+                </div>
+            </div>
+div>
+            </div>
+               </div>
+    </ </div>
+    </header>
+
+header>
+
+       <!-- Mission Hero Section -->
+    <!-- Mission Hero Section -->
+    <section class="mission-hero">
+        < <section class="mission-hero">
+        <div class="mission-contentdiv class="mission-content">
+">
+            <div class            <div class="mission-st="mission-statement">
+               atement">
+                <h <h1>Our Mission</h1>Our Mission</h11>
+                <p>
+>
+                <p>
+                    To transform the real estate                    To transform the real estate experience in Kano by providing experience in Kano by providing transparent, 
+                    trustworthy transparent, 
+                    trustworthy, and premium property solutions, and premium property solutions that that make every client feel make every client feel 
+ 
+                    valued, secure,                    valued, secure, and confident and confident in their investments.
+ in their investments.
+                               </p>
+            </div </p>
+            </div>
+
+            <!-- Trust Indicators -->
+>
+
+            <!-- Trust Indicators -->
+            <div class="trust            <div class="trust-indicators">
+                <div class="trust-ind-indicators">
+                <div class="trust-indicatoricator">
+                    <div class="">
+                    <div class="icon">🏠</divicon">🏠</div>
+                    <h3>Verified>
+                    <h3>Verified Properties</h3>
+                    Properties</h3>
+                    <p>Every listing personally <p>Every listing personally verified by our team verified by our team</p</p>
+                </div>
+                <div class=">
+                </div>
+                <div class="trust-indicator">
+                   trust-indicator">
+                    < <div class="icon">🤝div class="icon">🤝</</div>
+                    <h3div>
+                    <h3>Transparent Process</h3>
+                    <p>>Transparent Process</h3>
+                    <p>No hidden fees,No hidden fees, clear clear documentation</p documentation</p>
+               >
+                </div </div>
+                <div class="trust-ind>
+                <div class="trust-indicator">
+icator">
+                    <div class="icon                    <div class="icon">⭐">⭐</div</div>
+                   >
+                    < <h3>h3>Premium Service</h3>
+                   Premium Service</h3>
+                    <p> <p>Luxury experienceLuxury experience for for every client</p>
+                every client</p>
+                </div>
+                <div class </div>
+                <div class="trust-indicator">
+="trust-indicator">
+                                       <div class="icon <div class="icon">">💬</div>
+💬</div>
+                                       <h3>Direct <h3>Direct CEO CEO Access</h3>
+ Access</h3>
+                                       <p>Personal attention <p>Personal attention from leadership</p from leadership</p>
+                </div>
+            </>
+                </div>
+div>
+        </div>
+               </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Community Section </section>
+
+    <!-- WhatsApp Community Section -->
+    -->
+    <section class=" <section class="whatsapp-whatsapp-community">
+community">
+        <div class="        <div class="communitycommunity-card">
+            <h-card">
+            <h22>Join Our Trusted Community>Join Our Trusted Community</</h2>
+           h2>
+            <p <p>Be the first to>Be the first to see new see new properties, get exclusive properties, get exclusive deals, deals, and connect with other and connect with other verified buyers verified buyers and sellers in our WhatsApp and sellers in our WhatsApp community.</p>
+            <a href="https:// community.</p>
+            <a href="https://chat.wchat.whatsapphatsapp.com/BN.com/BNRx84yLsRx84yLsPD5PD5S4S4MGgrF2MGgrF2Ce" class="Ce" class="whatswhatsapp-btn">
+                <app-btn">
+                <i classi class="fab fa-what="fab fa-whatsappsapp"></i>
+                Join WhatsApp Community
+           "></i>
+                Join WhatsApp Community
+            </a>
+            </a>
+            <p <p style="margin-top style="margin-top: 1rem; font-size:: 1rem; font-size: 0.9rem; 0.9rem; opacity opacity: 0: 0.8;">
+                ✅ Verified.8;">
+                ✅ Verified members members only • only • 🔒 Safe 🔒 Safe & secure • & secure • 💎 💎 Premium community
+            Premium community
+            </p </p>
+        </div>
+        </div>
+   >
+    </section>
+
+    </section>
+
+    <!-- <!-- Floating Trust Widget Floating Trust Widget --> -->
+    <div class="fl
+    <div class="floating-trustoating-trust">
+        <div">
+        <div class=" class="trust-widgettrust-widget">
+">
+            <            <i class="i class="fas fa-phone"></i>
+            <divfas fa-phone"></i>
+            <div>
+                <div style="font>
+                <div style="font-size: 0.-size: 0.8rem;">Talk8rem;">Talk to CEO Direct to CEO Directly</divly</div>
+                <div>
+                <div style=" style="font-weight: font-weight: 800;">800;">0903305129209033051292</div</div>
+            </div>
+            </div>
+       >
+        </div>
+    </div>
+    </div </div>
+
+    <script>
+>
+
+    <script>
+               // Add interactive trust elements // Add interactive trust elements
+        document.addEventListener('DOM
+        document.addEventListener('DOMContentLoadedContentLoaded', function() {
+            //', function() {
+            // An Animate trust badges on scrollimate trust badges on scroll
+           
+            const observer = const observer = new Inters new IntersectionObserver((entriesectionObserver((entries) =>) => {
+                entries.forEach {
+                entries.forEach(entry(entry => {
+                    if (entry => {
+                    if (entry.is.isIntersecting) {
+                       Intersecting) {
+                        entry entry.target.style.opacity =.target.style.opacity = '1 '1';
+                        entry.target';
+                        entry.target.style.transform.style.transform = 'translateY = 'translateY(0(0)';
+                    }
+)';
+                    }
+                });
+                });
+            });
+
+            document.querySelectorAll            });
+
+            document.querySelectorAll('.trust-indicator').forEach('.trust-indicator').forEach((el) => {
+                el((el) => {
+                el.style.opacity = '0';
+.style.opacity = '0';
+                el.style.transform = '                el.style.transform = 'translateY(30px)translateY(30px)';
+                el.style.transition';
+                el.style.transition = 'all 0. = 'all 0.6s ease-out';
+6s ease-out';
+                               observer.observe(el observer.observe(el);
+            });
+       );
+            });
+        });
+    </ });
+    </script>
+</bodyscript>
+</body>
+</>
+</htmlhtml>
