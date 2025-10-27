@@ -1,2 +1,2 @@
-# Shehuameer06.github.io
+# ameerlandproperties.com
 Ameer land and properties website 
